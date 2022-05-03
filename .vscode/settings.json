@@ -1,0 +1,28 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#29afa4",
+    "activityBar.activeBorder": "#a92ab5",
+    "activityBar.background": "#29afa4",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#a92ab5",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#29afa4",
+    "statusBar.background": "#1f867d",
+    "statusBar.border": "#1f867d",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#29afa4",
+    "statusBarItem.remoteBackground": "#1f867d",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "tab.activeBorder": "#29afa4",
+    "titleBar.activeBackground": "#1f867d",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.border": "#1f867d",
+    "titleBar.inactiveBackground": "#1f867d99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#1f867d",
+  "cSpell.words": [
+    "Recipia"
+  ]
+}
