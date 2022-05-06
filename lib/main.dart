@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipia/theme/recipia_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +14,10 @@ class MyApp extends StatelessWidget {
     //Todo create theme
     //Todo Apply home widget
     return MaterialApp(
+      themeMode: ThemeMode.system,
       title: 'Recipia',
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-      ),
+      theme: RecipiaTheme.light(),
+      darkTheme: RecipiaTheme.dark(),
       home: Scaffold(
         appBar: AppBar(
           //todo style the title
