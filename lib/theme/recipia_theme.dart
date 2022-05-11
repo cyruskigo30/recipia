@@ -6,34 +6,44 @@ class RecipiaTheme {
   ///Declare a text theme called light text theme which uses google font comfortaa with predefined font size and weight
   ///The color os the text is black
   static TextTheme lightTextTheme = TextTheme(
+    bodyText2: GoogleFonts.comfortaa(
+      fontSize: 10.0,
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
+    ),
     bodyText1: GoogleFonts.comfortaa(
-      fontSize: 14.0,
+      fontSize: 12.0,
       fontWeight: FontWeight.w500,
       color: Colors.black,
     ),
-    bodyText2: GoogleFonts.comfortaa(
-      fontSize: 12.0,
-      fontWeight: FontWeight.w500,
-      color: Colors.black12,
-    ),
     headline1: GoogleFonts.comfortaa(
-      fontSize: 32.0,
-      fontWeight: FontWeight.bold,
+      fontSize: 24.0,
+      fontWeight: FontWeight.w900,
       color: Colors.black,
     ),
     headline2: GoogleFonts.comfortaa(
-      fontSize: 21.0,
-      fontWeight: FontWeight.w700,
+      fontSize: 22.0,
+      fontWeight: FontWeight.w800,
       color: Colors.black,
     ),
     headline3: GoogleFonts.comfortaa(
-      fontSize: 16.0,
+      fontSize: 20.0,
+      fontWeight: FontWeight.w700,
+      color: Colors.black,
+    ),
+    headline4: GoogleFonts.comfortaa(
+      fontSize: 18.0,
       fontWeight: FontWeight.w600,
+      color: Colors.black,
+    ),
+    headline5: GoogleFonts.comfortaa(
+      fontSize: 16.0,
+      fontWeight: FontWeight.w500,
       color: Colors.black,
     ),
     headline6: GoogleFonts.comfortaa(
       fontSize: 14.0,
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.bold,
       color: Colors.black,
     ),
   );
@@ -41,34 +51,44 @@ class RecipiaTheme {
   ///Declare a text theme called dark text theme which uses google font comfortaa with predefined font size and weight
   ///The color os the text is white
   static TextTheme darkTextTheme = TextTheme(
+    bodyText2: GoogleFonts.comfortaa(
+      fontSize: 10.0,
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+    ),
     bodyText1: GoogleFonts.comfortaa(
-      fontSize: 14.0,
+      fontSize: 12.0,
       fontWeight: FontWeight.w500,
       color: Colors.white,
     ),
-    bodyText2: GoogleFonts.comfortaa(
-      fontSize: 12.0,
-      fontWeight: FontWeight.w500,
-      color: Colors.white12,
-    ),
     headline1: GoogleFonts.comfortaa(
-      fontSize: 32.0,
-      fontWeight: FontWeight.bold,
+      fontSize: 24.0,
+      fontWeight: FontWeight.w900,
       color: Colors.white,
     ),
     headline2: GoogleFonts.comfortaa(
-      fontSize: 21.0,
-      fontWeight: FontWeight.w700,
+      fontSize: 22.0,
+      fontWeight: FontWeight.w800,
       color: Colors.white,
     ),
     headline3: GoogleFonts.comfortaa(
-      fontSize: 16.0,
+      fontSize: 20.0,
+      fontWeight: FontWeight.w700,
+      color: Colors.white,
+    ),
+    headline4: GoogleFonts.comfortaa(
+      fontSize: 18.0,
       fontWeight: FontWeight.w600,
+      color: Colors.white,
+    ),
+    headline5: GoogleFonts.comfortaa(
+      fontSize: 16.0,
+      fontWeight: FontWeight.w500,
       color: Colors.white,
     ),
     headline6: GoogleFonts.comfortaa(
       fontSize: 14.0,
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.bold,
       color: Colors.white,
     ),
   );
