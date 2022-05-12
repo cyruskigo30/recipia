@@ -9,42 +9,42 @@ class RecipiaTheme {
     bodyText2: GoogleFonts.comfortaa(
       fontSize: 10.0,
       fontWeight: FontWeight.w400,
-      color: Colors.black,
+      color: kLightTextColor,
     ),
     bodyText1: GoogleFonts.comfortaa(
       fontSize: 12.0,
       fontWeight: FontWeight.w500,
-      color: Colors.black,
+      color: kLightTextColor,
     ),
     headline1: GoogleFonts.comfortaa(
       fontSize: 24.0,
       fontWeight: FontWeight.w900,
-      color: Colors.black,
+      color: kLightTextColor,
     ),
     headline2: GoogleFonts.comfortaa(
       fontSize: 22.0,
       fontWeight: FontWeight.w800,
-      color: Colors.black,
+      color: kLightTextColor,
     ),
     headline3: GoogleFonts.comfortaa(
       fontSize: 20.0,
       fontWeight: FontWeight.w700,
-      color: Colors.black,
+      color: kLightTextColor,
     ),
     headline4: GoogleFonts.comfortaa(
       fontSize: 18.0,
       fontWeight: FontWeight.w600,
-      color: Colors.black,
+      color: kLightTextColor,
     ),
     headline5: GoogleFonts.comfortaa(
       fontSize: 16.0,
       fontWeight: FontWeight.w500,
-      color: Colors.black,
+      color: kLightTextColor,
     ),
     headline6: GoogleFonts.comfortaa(
       fontSize: 14.0,
       fontWeight: FontWeight.bold,
-      color: Colors.black,
+      color: kLightTextColor,
     ),
   );
 
@@ -54,42 +54,42 @@ class RecipiaTheme {
     bodyText2: GoogleFonts.comfortaa(
       fontSize: 10.0,
       fontWeight: FontWeight.w400,
-      color: Colors.white,
+      color: kDarkTextColor,
     ),
     bodyText1: GoogleFonts.comfortaa(
       fontSize: 12.0,
       fontWeight: FontWeight.w500,
-      color: Colors.white,
+      color: kDarkTextColor,
     ),
     headline1: GoogleFonts.comfortaa(
       fontSize: 24.0,
       fontWeight: FontWeight.w900,
-      color: Colors.white,
+      color: kDarkTextColor,
     ),
     headline2: GoogleFonts.comfortaa(
       fontSize: 22.0,
       fontWeight: FontWeight.w800,
-      color: Colors.white,
+      color: kDarkTextColor,
     ),
     headline3: GoogleFonts.comfortaa(
       fontSize: 20.0,
       fontWeight: FontWeight.w700,
-      color: Colors.white,
+      color: kDarkTextColor,
     ),
     headline4: GoogleFonts.comfortaa(
       fontSize: 18.0,
       fontWeight: FontWeight.w600,
-      color: Colors.white,
+      color: kDarkTextColor,
     ),
     headline5: GoogleFonts.comfortaa(
       fontSize: 16.0,
       fontWeight: FontWeight.w500,
-      color: Colors.white,
+      color: kDarkTextColor,
     ),
     headline6: GoogleFonts.comfortaa(
       fontSize: 14.0,
       fontWeight: FontWeight.bold,
-      color: Colors.white,
+      color: kDarkTextColor,
     ),
   );
 
@@ -97,19 +97,24 @@ class RecipiaTheme {
   ///using the light text theme already created
   static ThemeData light() {
     return ThemeData(
+      scaffoldBackgroundColor: kLightScaffoldColor,
       brightness: Brightness.light,
       checkboxTheme: CheckboxThemeData(
         fillColor: MaterialStateColor.resolveWith((states) => Colors.black),
       ),
-      appBarTheme: const AppBarTheme(
-        foregroundColor: Colors.black,
-        backgroundColor: Colors.white,
+      appBarTheme: AppBarTheme(
+        foregroundColor: kLightAppBarTextColor,
+        backgroundColor: kLightAppBarBackgroundColor,
+        titleTextStyle: TextStyle(
+          fontSize: 24,
+          color: kLightAppBarTextColor,
+        ),
       ),
-      floatingActionButtonTheme: const FloatingActionButtonThemeData(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.black,
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        foregroundColor: kWhiteColor,
+        backgroundColor: kPrimaryColor,
       ),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
         selectedItemColor: kPrimaryColor,
       ),
       textTheme: lightTextTheme,
@@ -120,16 +125,21 @@ class RecipiaTheme {
   ///using the dark text theme already created
   static ThemeData dark() {
     return ThemeData(
+      scaffoldBackgroundColor: kDarkScaffoldColor,
       brightness: Brightness.dark,
       appBarTheme: AppBarTheme(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.grey[900],
+        foregroundColor: kDarkAppBarTextColor,
+        backgroundColor: kDarkAppBarBackgroundColor,
+        titleTextStyle: TextStyle(
+          fontSize: 24,
+          color: kDarkAppBarTextColor,
+        ),
       ),
-      floatingActionButtonTheme: const FloatingActionButtonThemeData(
-        foregroundColor: Colors.white,
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        foregroundColor: kWhiteColor,
         backgroundColor: kPrimaryColor,
       ),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
         selectedItemColor: kPrimaryColor,
       ),
       textTheme: darkTextTheme,
