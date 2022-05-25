@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:recipia/theme/colors.dart';
+
+import 'colors.dart';
 
 class RecipiaTheme {
   ///Declare a text theme called light text theme which uses google font comfortaa with predefined font size and weight
@@ -106,17 +107,21 @@ class RecipiaTheme {
         foregroundColor: kLightAppBarTextColor,
         backgroundColor: kLightAppBarBackgroundColor,
         titleTextStyle: TextStyle(
-          fontSize: 24,
+          fontSize: 22,
           color: kLightAppBarTextColor,
+          fontWeight: FontWeight.w300,
         ),
       ),
       floatingActionButtonTheme: FloatingActionButtonThemeData(
-        foregroundColor: kWhiteColor,
-        backgroundColor: kPrimaryColor,
+        foregroundColor: kLightAppBarTextColor,
+        backgroundColor: kLightAppBarBackgroundColor,
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         selectedItemColor: kPrimaryColor,
+        unselectedItemColor: kLightAppBarTextColor,
+        backgroundColor: kLightAppBarBackgroundColor,
       ),
+      cardColor: kLightCardColor,
       textTheme: lightTextTheme,
     );
   }
@@ -131,17 +136,21 @@ class RecipiaTheme {
         foregroundColor: kDarkAppBarTextColor,
         backgroundColor: kDarkAppBarBackgroundColor,
         titleTextStyle: TextStyle(
-          fontSize: 24,
-          color: kDarkAppBarTextColor,
+          fontSize: 22,
+          color: kLightCardColor,
+          fontWeight: FontWeight.w300,
         ),
       ),
       floatingActionButtonTheme: FloatingActionButtonThemeData(
-        foregroundColor: kWhiteColor,
-        backgroundColor: kPrimaryColor,
+        foregroundColor: kDarkAppBarTextColor,
+        backgroundColor: kDarkCardColor,
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         selectedItemColor: kPrimaryColor,
+        unselectedItemColor: kWhiteColor,
+        backgroundColor: kDarkAppBarBackgroundColor,
       ),
+      cardColor: kDarkCardColor,
       textTheme: darkTextTheme,
     );
   }

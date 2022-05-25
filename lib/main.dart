@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     final theme = RecipiaTheme.light();
     //Todo Apply home widget
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       title: 'Recipia',
       theme: theme,
