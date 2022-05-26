@@ -9,7 +9,7 @@ class MainRecipe extends StatelessWidget {
   final String category = "Editor's Choice";
   final String title = "The art of dough";
   final String description = "Learn to make the perfect bread";
-  final String chef = "Cyrus Kigo";
+  final String chef = "Cyrus James";
 
   @override
   Widget build(BuildContext context) {

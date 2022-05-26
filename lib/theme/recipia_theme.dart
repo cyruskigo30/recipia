@@ -117,7 +117,7 @@ class RecipiaTheme {
         backgroundColor: kLightAppBarBackgroundColor,
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
-        selectedItemColor: kPrimaryColor,
+        selectedItemColor: kWhiteColor,
         unselectedItemColor: kLightAppBarTextColor,
         backgroundColor: kLightAppBarBackgroundColor,
       ),

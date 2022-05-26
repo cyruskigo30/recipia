@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:recipia/widgets/author_card_builder.dart';
 import 'package:recipia/theme/colors.dart';
-import 'package:recipia/theme/recipia_theme.dart';
 
 class Author extends StatelessWidget {
   const Author({
@@ -9,7 +9,7 @@ class Author extends StatelessWidget {
   final String category = "Editor's Choice";
   final String title = "The art of dough";
   final String description = "Learn to make the perfect bread";
-  final String chef = "Cyrus Kigo";
+  final String chef = "Cyrus James";
 
   @override
   Widget build(BuildContext context) {
@@ -37,35 +37,18 @@ class Author extends StatelessWidget {
 
         ///add stack of text to the container
 
-        child: Stack(
-          children: [
-            Text(
-              category,
-              style: RecipiaTheme.lightTextTheme.headline1,
+        child: Column(
+          children: const [
+            /// import author card
+            AuthorCard(
+              title: 'Smoothie Connoisseur',
+              authorName: 'Cyrus James',
+
+              ///ImageProvider of the AuthorCard is passed to the calling of the actual card with actual link to the image asset
+              imageProvider: AssetImage('assets/images/cover.png'),
             ),
-            Positioned(
-              child: Text(
-                title,
-                style: RecipiaTheme.lightTextTheme.headline3,
-              ),
-              top: 35,
-            ),
-            Positioned(
-              child: Text(
-                description,
-                style: RecipiaTheme.lightTextTheme.bodyText1,
-              ),
-              bottom: 40,
-              right: 0,
-            ),
-            Positioned(
-              child: Text(
-                chef,
-                style: RecipiaTheme.lightTextTheme.bodyText2,
-              ),
-              bottom: 10,
-              right: 0,
-            ),
+
+            ///todo add positioned text
           ],
         ),
       ),
