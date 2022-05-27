@@ -2,17 +2,20 @@ import 'package:flutter/material.dart';
 
 ///Light theme colors
 Color kLightScaffoldColor = Colors.amber.shade50;
-Color kLightAppBarBackgroundColor = Colors.brown;
-Color kLightAppBarTextColor = Colors.amber.shade50;
-Color kLightCardColor = Colors.amber.shade50;
-Color kLightTextColor = Colors.black;
+Color kLightAppBarBackgroundColor = Colors.orange;
+Color kLightAppBarTextColor = Colors.orange.shade50;
+Color kLightCardColor = Colors.orange.shade50;
+Color kLightTextColor = Colors.grey.shade700;
+Color kLightSnackbarBgColor = Colors.teal.shade900;
 
 ///Dark theme colors
 Color kDarkScaffoldColor = Colors.grey.shade600;
 Color kDarkAppBarBackgroundColor = Colors.blueGrey.shade900;
-Color kDarkAppBarTextColor = Colors.amber.shade800;
+Color kDarkAppBarTextColor = Colors.orange.shade800;
 Color kDarkCardColor = Colors.blueGrey.shade900;
-Color kDarkTextColor = Colors.amber.shade50;
+Color kDarkTextColor = Colors.orange.shade50;
+
+Color kDarkSnackbarBgColor = Colors.orange.shade50;
 
 ///Common theme colors
 

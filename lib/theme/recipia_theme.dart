@@ -123,6 +123,12 @@ class RecipiaTheme {
       ),
       cardColor: kLightCardColor,
       textTheme: lightTextTheme,
+      snackBarTheme: SnackBarThemeData(
+        backgroundColor: kLightSnackbarBgColor,
+        contentTextStyle: TextStyle(
+          color: kDarkTextColor,
+        ),
+      ),
     );
   }
 

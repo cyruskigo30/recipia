@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipia/services/home/pages/author.dart';
+import 'package:recipia/services/home/pages/explore.dart';
 import 'package:recipia/services/home/pages/main_recipe.dart';
 import 'package:recipia/theme/colors.dart';
 import 'package:recipia/utils/constants.dart';
@@ -26,7 +27,7 @@ class _HomeState extends State<Home> {
     const Author(),
 
     ///todo replace with card three
-    Container(),
+    const Explore(),
   ];
 
   ///function that handles tapped bar item and we set the index of the item the user pressed
@@ -73,15 +74,15 @@ class _HomeState extends State<Home> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.fastfood_outlined),
-            label: 'Home',
+            label: 'Recipe',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.food_bank_outlined),
-            label: 'Recipes',
+            label: 'Author',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.restaurant_outlined),
-            label: 'Comments',
+            label: 'Explore',
           ),
         ],
       ),
