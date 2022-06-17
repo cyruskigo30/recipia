@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:recipia/widgets/author_card_builder.dart';
-import 'package:recipia/theme/colors.dart';
 
 class Author extends StatelessWidget {
   const Author({

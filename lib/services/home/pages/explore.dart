@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recipia/widgets/author_card_builder.dart';
 import 'package:recipia/theme/colors.dart';
+import 'package:recipia/theme/recipia_theme.dart';
 
 class Explore extends StatelessWidget {
   const Explore({
@@ -22,9 +22,9 @@ class Explore extends StatelessWidget {
         //   width: 350,
         //   height: 450,
         // ),
-        decoration: const BoxDecoration(
-          color: kWhiteColor,
-          image: DecorationImage(
+        decoration: BoxDecoration(
+          color: kDarkCardColor,
+          image: const DecorationImage(
             image: AssetImage(
               'assets/images/pageTwo.jpg',
             ),
@@ -39,10 +39,125 @@ class Explore extends StatelessWidget {
         ///add stack of text to the container
 
         child: Stack(
-          children: const [
+          children: [
             ///todo add dark overlay box decoration
-            ///todo add container column and text
-            ///todo add  center widget with chip widget
+            /// add container column and text
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.bookmark_outline_rounded,
+                  size: 40,
+                  color: kDarkTextColor,
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'Recipe Trends',
+                  style: RecipiaTheme.darkTextTheme.headline2,
+                ),
+                const SizedBox(height: 30),
+              ],
+            ),
+
+            /// add  center widget with chip widget
+            Center(
+              child: Wrap(
+                alignment: WrapAlignment.start,
+                spacing: 12,
+                children: [
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'Healthy',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'vegan',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'Carrots',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'Greens',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'Pescetarian',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'Wheat',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'Fruits',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'vegan',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                  Chip(
+                    backgroundColor: Theme.of(context).cardColor,
+                    label: Text(
+                      'vegan',
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    onDeleted: () {
+                      print('deleted');
+                    },
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
