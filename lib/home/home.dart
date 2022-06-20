@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:recipia/services/home/pages/author.dart';
-import 'package:recipia/services/home/pages/explore.dart';
-import 'package:recipia/services/home/pages/main_recipe.dart';
-import 'package:recipia/theme/colors.dart';
-import 'package:recipia/utils/constants.dart';
+import 'package:recipia/screens/explore_screen.dart';
+import '../../theme/colors.dart';
+import '../../utils/constants.dart';
+import '../components/card2.dart';
+import '../components/card3.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -20,14 +20,14 @@ class _HomeState extends State<Home> {
 
   ///we define the widgets that will be displayed on each tab
   static List<Widget> pages = <Widget>[
-    ///todo replace with card one
-    const MainRecipe(),
+    ///? Explore screen
+    ExploreScreen(),
 
-    ///todo replace with card two
-    const Author(),
+    ///todo replace with recipe screen
+    const Card2(),
 
-    ///todo replace with card three
-    const Explore(),
+    ///todo replace with recipe screen
+    const Card3(),
   ];
 
   ///function that handles tapped bar item and we set the index of the item the user pressed
@@ -73,16 +73,16 @@ class _HomeState extends State<Home> {
         onTap: _onItemTapped,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.fastfood_outlined),
-            label: 'Recipe',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.food_bank_outlined),
-            label: 'Author',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.restaurant_outlined),
+            icon: Icon(Icons.explore_outlined),
             label: 'Explore',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.cookie_outlined),
+            label: 'Recipes',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_bag_outlined),
+            label: 'To Buy',
           ),
         ],
       ),

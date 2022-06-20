@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:recipia/theme/colors.dart';
 import 'package:recipia/theme/recipia_theme.dart';
 
-class MainRecipe extends StatelessWidget {
-  const MainRecipe({
+class Card1 extends StatelessWidget {
+  const Card1({
     Key? key,
   }) : super(key: key);
   final String category = "Editor's Choice";

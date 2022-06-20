@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recipia/services/home/home.dart';
-import 'package:recipia/theme/recipia_theme.dart';
+import 'theme/recipia_theme.dart';
+import 'home/home.dart';
 
 void main() => runApp(const MyApp());
 
